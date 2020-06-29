@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="109.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainadjustment.NodeTypeController">
+<AnchorPane id="AnchorPane" fx:id="gridPane" prefHeight="109.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <BorderPane layoutX="65.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <top>
@@ -38,18 +38,18 @@
             </HBox>
          </top>
          <center>
-            <VBox prefHeight="66.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <VBox prefHeight="66.0" prefWidth="600.0" spacing="5.0" BorderPane.alignment="CENTER">
                <children>
                   <HBox prefHeight="22.0" prefWidth="600.0" spacing="5.0">
                      <children>
                         <Text fx:id="dateText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="94.1367416381836">
                            <font>
-                              <Font name="System Italic" size="14.0" />
+                              <Font name="System Italic" size="10.0" />
                            </font>
                         </Text>
                         <Text fx:id="timeText" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="152.53668403625488">
                            <font>
-                              <Font name="System Italic" size="14.0" />
+                              <Font name="System Italic" size="10.0" />
                            </font>
                         </Text>
                      </children>

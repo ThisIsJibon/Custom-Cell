@@ -7,7 +7,11 @@ package mainadjustment;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ListView;
 
 /**
  * FXML Controller class
@@ -16,12 +20,28 @@ import javafx.fxml.Initializable;
  */
 public class MainController implements Initializable {
 
+    @FXML
+    private ListView<postType> listview;
+    private ObservableList<postType>studentObservableList;
+
+    public MainController() {
+        studentObservableList = FXCollections.observableArrayList();
+        studentObservableList.addAll(
+                new postType("kalke exam", "3-04-2010", "Mahin", "5:50 PM"),
+                new postType("second post dilam", "19-03-2013","Mehedi", "5:10 AM")
+        );
+    }
+    
+    
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+            listview.setItems(studentObservableList);
+            listview.setCellFactory(NodeTypeController -> new NodeTypeController());
+
     }    
     
 }
