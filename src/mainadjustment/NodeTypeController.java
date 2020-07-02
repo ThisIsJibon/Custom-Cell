@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListCell;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Text;
 
 /**
@@ -35,7 +36,7 @@ public class NodeTypeController extends ListCell<postType>{
     @FXML
     private Button saveButton;
     @FXML
-    private AnchorPane gridPane;
+    private BorderPane gridPane;
     private FXMLLoader mLLoader;
 
     /**
